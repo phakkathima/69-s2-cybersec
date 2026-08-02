@@ -20,8 +20,8 @@ services:
       - PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL}
       - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}
 
-  volumes:
-    data-postgres:
+volumes:
+  data-postgres:
 
     
 
