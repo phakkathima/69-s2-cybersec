@@ -8,3 +8,14 @@ services:
       - POSTGRES_PASSWORD=123456
       - POSTGRES_USER=phakkathima
       - POSTGRES_DB=phakkathima
+
+  admin:
+    image: dpage/pgadmin4
+    container_name: 69-s2-admin
+    ports:
+      - 8082:80
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=phakkathima-w@rmutp.ac.th
+      - PGADMIN_DEFAULT_PASSWORD=123456
+      
+
