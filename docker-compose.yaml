@@ -15,8 +15,8 @@ services:
     ports:
       - 8082:80
     environment:
-      - PGADMIN_DEFAULT_EMAIL=phakkathima-w@rmutp.ac.th
-      - PGADMIN_DEFAULT_PASSWORD=123456
+      - PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL}
+      - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}
 
     
 
