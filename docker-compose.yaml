@@ -21,17 +21,12 @@ services:
       - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}
     volumes:
       - data-pgadmin:/var/lib/pgadmin
-      
-   app:
+
+  app:
     image: prawee/strapi
     container_name: 69-s2-app
     ports:
-      - 9092:1337
-    app:
-    image: prawee/strapi
-    container_name: 69-s2-app
-    ports:
-      - ${APP_PORT}:1337"
+      - ${APP_PORT}:1337
     environment:
       - DATABASE_HOST=${DATABASE_HOST}
       - DATABASE_PORT=${DATABASE_PORT}
@@ -44,4 +39,3 @@ services:
 volumes:
   data-postgres:
   data-pgadmin:
-
